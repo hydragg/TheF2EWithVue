@@ -4,7 +4,7 @@ import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import IsSignUp from "./views/IsSignUp.vue";
 import Find from "./views/Find.vue";
-import StageCheck from ".views/StargeCheck.vue";
+import StageCheck from "./views/StageCheck.vue";
 import TheF2E from "./views/TheF2E.vue";
 import Week1 from "./views/Week1.vue";
 import Week2 from "./views/Week2.vue";

@@ -5,7 +5,7 @@ import About from "./views/About.vue";
 
 Vue.use(Router);
 
-export default new Router({
+export const router = new Router({
   routes: [
     {
       path: "/",
@@ -19,3 +19,11 @@ export default new Router({
     }
   ]
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.title) {
+    document.title = to.meta.title;
+    next();
+  }
+});
+

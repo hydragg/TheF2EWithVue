@@ -1,9 +1,9 @@
 <template>
-    <div id="week7"></div>
+  <div id="week7"></div>
 </template>
 
 <script>
 export default {
-    name: "week7"
+  name: "week7"
 }
 </script>

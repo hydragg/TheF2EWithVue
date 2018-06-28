@@ -1,9 +1,9 @@
 <template>
-    <div id="stage-search"></div>
+  <div id="stage-search"></div>
 </template>
 
 <script>
 export default {
-    name: "starge-search"
+  name: "starge-search"
 }
 </script>

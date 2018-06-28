@@ -1,5 +1,5 @@
 <template>
-    <div id="find"></div>
+  <div id="find"></div>
 </template>
 
 <script>

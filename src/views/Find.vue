@@ -4,6 +4,9 @@
 
 <script>
 export default {
-    name: "find"
-}
+  name: "find",
+  data() {
+    return {};
+  }
+};
 </script>

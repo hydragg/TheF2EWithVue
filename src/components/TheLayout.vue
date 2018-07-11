@@ -2,41 +2,41 @@
   <Layout id="layout" class="layout" :style="{ minHeight: '100vh'}">
     <Sider :width="200" breakpoint="md" collapsible :collapsed-width="0" v-model="isCollapsed">
       <Menu active-name="1" theme="dark" width="auto" :class="menuitemClasses">
-        <Menu-Item name="1">
+        <Menu-Item name="1" @click.native="toPage('home')">
           <span>首頁</span>
         </Menu-Item>
-        <Menu-Item name="2">
+        <Menu-Item name="2" @click.native="toPage('is-sign-up')">
           <span>報名查詢</span>
         </Menu-Item>
-        <Menu-Item name="3">
+        <Menu-Item name="3" @click.native="toPage('stage-check')">
           <span>關卡查詢</span>
         </Menu-Item>
         <Submenu name="4">
           <template slot="title">
             <span>精神時光屋作業</span>
           </template>
-          <Menu-Item name="4-1">
+          <Menu-Item name="4-1" @click.native="toPage('week1')">
             <span>第一週</span>
           </Menu-Item>
-          <Menu-Item name="4-2">
+          <Menu-Item name="4-2"  @click.native="toPage('week2')">
             <span>第二週</span>
           </Menu-Item>
-          <Menu-Item name="4-3">
+          <Menu-Item name="4-3"  @click.native="toPage('week3')">
             <span>第三週</span>
           </Menu-Item>
-          <Menu-Item name="4-4">
+          <Menu-Item name="4-4"  @click.native="toPage('week4')">
             <span>第四週</span>
           </Menu-Item>
-          <Menu-Item name="4-5">
+          <Menu-Item name="4-5"  @click.native="toPage('week5')">
             <span>第五週</span>
           </Menu-Item>
-          <Menu-Item name="4-6">
+          <Menu-Item name="4-6"  @click.native="toPage('week6')">
             <span>第六週</span>
           </Menu-Item>
-          <Menu-Item name="4-7">
+          <Menu-Item name="4-7"  @click.native="toPage('week7')">
             <span>第七週</span>
           </Menu-Item>
-          <Menu-Item name="4-8">
+          <Menu-Item name="4-8"  @click.native="toPage('week8')">
             <span>第八週</span>
           </Menu-Item>
         </Submenu>
@@ -65,6 +65,11 @@ export default {
   computed: {
     menuitemClasses() {
       return ['menu-item', this.isCollapsed ? 'collapsed-menu' : ''];
+    }
+  },
+  methods: {
+    toPage(routerName) {
+      this.$router.push({ name: routerName });
     }
   }
 }

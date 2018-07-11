@@ -1,5 +1,7 @@
 <template>
-  <div id="the-f2e"></div>
+  <div id="the-f2e">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
